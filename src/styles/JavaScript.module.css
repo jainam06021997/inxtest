@@ -1,0 +1,57 @@
+.container {
+    display: block;
+    padding: 50px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.arrow-container {
+    display: inline-block;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.arrow {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #5e5858;
+    border-right: 2px solid #5e5858;
+}
+
+.arrow-selected {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.up-arrow {
+    transform: rotate(-45deg);
+}
+
+.down-arrow {
+    transform: rotate(135deg);
+}

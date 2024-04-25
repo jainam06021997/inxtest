@@ -1,0 +1,60 @@
+.container {
+    display: block;
+    padding: 50px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    float: left;
+    border: 1px ridge blue;
+    height: 50px;
+}
+
+.column > .tooltip {
+    display: none;
+}
+
+.column:hover > .tooltip {
+    display: block;
+}
+
+.tooltip {
+    border: 0.5px dashed darkgray;
+    float: right;
+    margin-top: -25px;
+    margin-right: -30px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 1280px) {
+    .column {
+        width: 30%;
+    }
+
+    .column:nth-child(3n) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1279px) {
+    .column {
+        width: 45%;
+    }
+
+    .column:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+    }
+}
